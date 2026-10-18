@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casa Living | Home Decor</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                CASA<span> LIVING.</span>
+                <small>Make yourself at home</small>
+            </a>
+
+            <button class="cart-button" type="button">
+                <i class="fa-solid fa-bag-shopping"></i>
+                Cart <span id="cartCount">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <p class="hero-label">THE ART OF SLOW LIVING</p>
+
+            <h1>Make room for<br>
+                <span>beautiful living.</span>
+            </h1>
+
+            <p class="hero-text">
+                Thoughtful pieces for a home that feels like you.
+            </p>
+
+            <a href="#shop" class="shop-button">
+                Explore Collection <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container shop-section" id="shop">
+
+        <div class="section-heading">
+            <div>
+                <p class="small-heading">CURATED FOR YOUR HOME</p>
+                <h2>Our Collection</h2>
+            </div>
+
+            <p id="productCount">Loading products...</p>
+        </div>
+
+        <!-- Search and Filters -->
+        <div class="row g-3 mb-4">
+
+            <div class="col-md-5">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                           id="searchInput"
+                           class="form-control"
+                           placeholder="Search furniture, decor...">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <select id="categoryFilter" class="form-select">
+                    <option value="all">All home products</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <select id="sortFilter" class="form-select">
+                    <option value="default">Sort: Recommended</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="az">Name: A to Z</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Loading and Error Message -->
+        <div id="message" class="text-center py-5">
+            <div class="spinner-border" role="status"></div>
+            <p class="mt-3">Preparing your collection...</p>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="row g-4" id="productContainer"></div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container text-center">
+            <p class="small-heading">A HOME THAT FEELS LIKE YOU</p>
+
+            <h2>Simple pieces. Meaningful spaces.</h2>
+
+            <p>
+                Discover timeless finds to make every corner
+                feel a little more special.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h3>CASA LIVING.</h3>
+            <p>Thoughtfully chosen, beautifully lived.</p>
+            <small>© 2026 Casa Living. Student API project.</small>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
